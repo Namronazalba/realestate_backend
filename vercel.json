@@ -2,11 +2,11 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "outputDirectory": "public",
   "functions": {
-    "public/lambda.php": {
+    "api/lambda.php": {
       "runtime": "vercel-php@0.7.4"
     }
   },
   "rewrites": [
-    { "source": "/(.*)", "destination": "/public/lambda.php" }
+    { "source": "/(.*)", "destination": "/api/lambda.php" }
   ]
 }
